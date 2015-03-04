@@ -1,0 +1,63 @@
+[submodule "bundle/html5.vim"]
+	path = bundle/html5.vim
+	url = git@github.com:othree/html5.vim.git
+[submodule "bundle/rainbow_parentheses.vim"]
+	path = bundle/rainbow_parentheses.vim
+	url = git://github.com/kien/rainbow_parentheses.vim.git
+[submodule "bundle/unite.vim"]
+	path = bundle/unite.vim
+	url = git@github.com:Shougo/unite.vim.git
+[submodule "bundle/vim-classpath"]
+	path = bundle/vim-classpath
+	url = git://github.com/tpope/vim-classpath.git
+[submodule "bundle/vim-fugitive"]
+	path = bundle/vim-fugitive
+	url = git://github.com/tpope/vim-fugitive.git
+[submodule "bundle/vim-ruby"]
+	path = bundle/vim-ruby
+	url = git@github.com:vim-ruby/vim-ruby.git
+[submodule "bundle/vim-slime"]
+	path = bundle/vim-slime
+	url = git@github.com:jpalardy/vim-slime.git
+[submodule "bundle/nerdcommenter"]
+	path = bundle/nerdcommenter
+	url = git@github.com:scrooloose/nerdcommenter.git
+[submodule "bundle/scratch.vim"]
+	path = bundle/scratch.vim
+	url = git@github.com:mtth/scratch.vim.git
+[submodule "bundle/vim-airline"]
+	path = bundle/vim-airline
+	url = git@github.com:bling/vim-airline.git
+[submodule "bundle/vim-clojure-static"]
+	path = bundle/vim-clojure-static
+	url = git://github.com/guns/vim-clojure-static.git
+[submodule "bundle/vim-lucius"]
+	path = bundle/vim-lucius
+	url = git@github.com:jonathanfilip/vim-lucius.git
+[submodule "bundle/vim-sensible"]
+	path = bundle/vim-sensible
+	url = git://github.com/tpope/vim-sensible.git
+[submodule "bundle/vim-surround"]
+	path = bundle/vim-surround
+	url = git@github.com:tpope/vim-surround
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = git://github.com/scrooloose/nerdtree.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = git@github.com:scrooloose/syntastic
+[submodule "bundle/vim-autotag"]
+	path = bundle/vim-autotag
+	url = git@github.com:craigemery/vim-autotag.git
+[submodule "bundle/vim-fireplace"]
+	path = bundle/vim-fireplace
+	url = git://github.com/tpope/vim-fireplace.git
+[submodule "bundle/vim-repeat"]
+	path = bundle/vim-repeat
+	url = git@github.com:tpope/vim-repeat
+[submodule "bundle/vim-sexp"]
+	path = bundle/vim-sexp
+	url = git@github.com:guns/vim-sexp
+[submodule "bundle/vim-typedclojure"]
+	path = bundle/vim-typedclojure
+	url = git@github.com:typedclojure/vim-typedclojure.git
