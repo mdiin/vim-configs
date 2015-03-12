@@ -12,8 +12,9 @@ augroup myvimrc
 augroup END
 
 " Highlight comments across files
-colorscheme default
-highlight Comment ctermfg=red ctermbg=gray
+colorscheme solarized
+set background=dark
+highlight Comment ctermfg=1* ctermbg=0 cterm=bold
 
 " Extra file types
 au BufNewFile,BufRead *.cljx setlocal ft=clojure
