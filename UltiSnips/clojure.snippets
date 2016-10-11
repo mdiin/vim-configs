@@ -1,0 +1,12 @@
+snippet defn
+(s/defn ${1:fn}
+	[$2]
+	$0)
+endsnippet
+
+snippet sdefn
+(s/defn ${1:fn-with-schema} :- ${2:s/Any}
+	[$3]
+	$0)
+endsnippet
+

@@ -1,0 +1,46 @@
+snippet import
+import ${1:*} from $2
+endsnippet
+
+snippet importd
+import { $1 } from $2
+endsnippet
+
+snippet const
+const $1 = $2
+endsnippet
+
+snippet constd
+const { $1 } = $2
+endsnippet
+
+snippet rclass
+class $1 extends Component {
+	static propTypes = {
+		$2
+	}
+
+	static route = {
+		navigationBar: {
+			title: () => I18n.t($3)
+		}
+	}
+
+	canRender () {
+		return true
+	}
+
+	render () {
+		if (!this.canRender()) {
+			return false
+		}
+
+		return (
+			$0
+		)
+	}
+}
+
+const styles = StyleSheet.create({})
+endsnippet
+
