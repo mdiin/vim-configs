@@ -11,6 +11,9 @@ augroup myvimrc
   au BufWritePost keybindings.vim so ~/.vim/keybindings.vim
 augroup END
 
+" Auto-remove trailing whitespace from code files
+autocmd FileType clojure,javascript,html,xml,fish,ruby autocmd BufWritePre <buffer> %s/\s\+$//e
+
 " Highlight comments across files
 colorscheme solarized
 set background=dark
