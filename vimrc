@@ -36,9 +36,6 @@ let g:slime_default_config = {"socket_name": "default", "target_pane": "1"}
 " Commands
 command JSONFormat :%!python -m json.tool
 
-" cljfmt configuration
-let g:clj_fmt_autosave = 0 " Do not autoformat when saving...
-
 " airline
 let g:airline_powerline_fonts = 0
 
