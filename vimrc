@@ -47,8 +47,8 @@ endif
 " Grepper
 let g:grepper = {
   \ 'tools': ['ag', 'git', 'grep'],
-  \ 'open':  0,
-  \ 'jump':  1,
+  \ 'open':  1,
+  \ 'jump':  0,
   \ }
 
 " Unite
