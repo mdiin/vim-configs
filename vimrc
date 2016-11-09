@@ -29,8 +29,6 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 
-au BufNewFile,BufRead *.js setlocal tabstop=2 shiftwidth=2
-
 " Slime config
 let g:slime_target = "tmux"
 let g:slime_default_config = {"socket_name": "default", "target_pane": "1"}
