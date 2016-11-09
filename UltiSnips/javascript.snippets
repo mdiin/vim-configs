@@ -1,9 +1,9 @@
 snippet import
-import ${1:*} from $2
+import ${1:*} from '$2'
 endsnippet
 
 snippet importd
-import { $1 } from $2
+import { $1 } from '$2'
 endsnippet
 
 snippet const
@@ -12,6 +12,28 @@ endsnippet
 
 snippet constd
 const { $1 } = $2
+endsnippet
+
+snippet react-imports
+import React, { Component } from 'react'
+endsnippet
+
+snippet default-react-class
+export default class $1 extends Component {
+	canRender = () => {
+		return true
+	}
+
+	render () {
+		if (!this.canRender()) {
+			return false
+		}
+
+		return (
+			$0
+		)
+	}
+}
 endsnippet
 
 snippet rclass
