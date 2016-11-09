@@ -22,6 +22,7 @@ highlight Comment ctermfg=1* ctermbg=0 cterm=bold
 " Extra file types
 au BufNewFile,BufRead *.cljx setlocal ft=clojure
 au BufNewFile,BufRead *.cljc setlocal ft=clojure
+au BufNewFile,BufRead *.boot setlocal ft=clojure
 au BufNewFile,BufRead *.md setlocal ft=markdown
 au BufNewFile,BufRead *fish_funced* setlocal ft=fish
 
