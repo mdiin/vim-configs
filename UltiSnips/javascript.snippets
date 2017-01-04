@@ -10,59 +10,55 @@ snippet const
 const $1 = $2
 endsnippet
 
+snippet consto
+const $1 = { $2 }
+endsnippet
+
 snippet constd
 const { $1 } = $2
 endsnippet
 
-snippet react-imports
-import React, { Component } from 'react'
+snippet clog
+console.log('$1')
+$0
 endsnippet
 
-snippet default-react-class
-export default class $1 extends Component {
-	canRender = () => {
-		return true
-	}
+snippet olog
+console.log('$1', $2)
+$0
+endsnippet
 
-	render () {
-		if (!this.canRender()) {
-			return false
-		}
+snippet if
+if ($1) {
+	$2
+}$0
+endsnippet
 
-		return (
-			$0
-		)
-	}
+snippet ifel
+if ($1) {
+	$2
+} else {
+	$3
+}$0
+endsnippet
+
+snippet fn1
+($1) => $0
+endsnippet
+
+snippet fn1d
+({ $1 }) => $0
+endsnippet
+
+snippet fn
+($1) => {
+	$0
 }
 endsnippet
 
-snippet rclass
-class $1 extends Component {
-	static propTypes = {
-		$2
-	}
-
-	static route = {
-		navigationBar: {
-			title: () => I18n.t($3)
-		}
-	}
-
-	canRender () {
-		return true
-	}
-
-	render () {
-		if (!this.canRender()) {
-			return false
-		}
-
-		return (
-			$0
-		)
-	}
+snippet fnd
+({ $1 }) => {
+	$0
 }
-
-const styles = StyleSheet.create({})
 endsnippet
 

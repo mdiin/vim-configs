@@ -36,8 +36,10 @@ noremap <M-p> <Esc>p
 " Grepper bindings
 nnoremap <leader>* :Grepper -tool ack -cword<cr>
 nnoremap <leader>git :Grepper -tool git -noswitch<cr>
-nnoremap <leader>n :cnext<cr>
-nnoremap <leader>p :cprev<cr>
+nnoremap ]c :cnext<cr>
+nnoremap [c :cprev<cr>
+nnoremap ]l :lnext<cr>
+nnoremap [l :lprev<cr>
 nmap gs <plug>(GrepperOperator)
 xmap gs <plug>(GrepperOperator)
 

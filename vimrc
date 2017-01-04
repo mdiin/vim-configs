@@ -76,6 +76,9 @@ let g:syntastic_javascript_standard_exec = "./node_modules/.bin/standard"
 " UltiSnips
 let g:UltiSnipsSnippetDirectories = ['~/.vim/UltiSnips', 'UltiSnips']
 
+" NERDCommenter
+let g:NERDSpaceDelims = 1
+
 " Keybindings
 source ~/.vim/keybindings.vim
 
