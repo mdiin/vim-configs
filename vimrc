@@ -79,6 +79,11 @@ let g:UltiSnipsSnippetDirectories = ['~/.vim/UltiSnips', 'UltiSnips']
 " NERDCommenter
 let g:NERDSpaceDelims = 1
 
+" Neovim specific
+if has('nvim')
+  set inccommand=split
+endif
+
 " Keybindings
 source ~/.vim/keybindings.vim
 
