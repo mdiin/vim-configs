@@ -82,3 +82,6 @@
 [submodule "bundle/vim-fish"]
 	path = bundle/vim-fish
 	url = git@github.com:dag/vim-fish.git
+[submodule "bundle/vim-sayid"]
+	path = bundle/vim-sayid
+	url = git@github.com:arsenerei/vim-sayid.git
