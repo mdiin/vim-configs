@@ -19,13 +19,15 @@ const { $1 } = $2
 endsnippet
 
 snippet clog
-console.log('$1')
-$0
+console.log('$1')$0
 endsnippet
 
 snippet olog
-console.log('$1', $2)
-$0
+console.log('$1', $2)$0
+endsnippet
+
+snippet tlog
+console.log('$1', $1)$0
 endsnippet
 
 snippet if
@@ -50,6 +52,10 @@ snippet fn1d
 ({ $1 }) => $0
 endsnippet
 
+snippet fn1c
+$1 => $0
+endsnippet
+
 snippet fn
 ($1) => {
 	$0
@@ -60,5 +66,13 @@ snippet fnd
 ({ $1 }) => {
 	$0
 }
+endsnippet
+
+snippet o
+{ $0 }
+endsnippet
+
+snippet a
+$1($2)$0
 endsnippet
 
