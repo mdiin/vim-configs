@@ -1,7 +1,7 @@
 " new leaders
 " default is good: \
 let g:paredit_leader = '§'
-let g:mapleader = '\'
+" let g:mapleader = ','
 
 " Meta-combinations that should treat Meta as escape
 inoremap <M-h> <Esc>h
@@ -40,8 +40,8 @@ nnoremap ]c :cnext<cr>
 nnoremap [c :cprev<cr>
 nnoremap ]l :lnext<cr>
 nnoremap [l :lprev<cr>
-nmap gs <plug>(GrepperOperator)
-xmap gs <plug>(GrepperOperator)
+" nmap gs <plug>(GrepperOperator)
+" xmap gs <plug>(GrepperOperator)
 
 " normal mode bindings
 
@@ -60,4 +60,5 @@ map <unique> <silent> <Leader><space> :Unite -start-insert file_rec/neovim<CR>
 
 " Clojure (fireplace) bindings
 au BufNewFile,BufRead *.clj map <silent> gd :execute "Djump " . expand('<cword>')<CR>
+au BufNewFile,BufRead *.clj map <silent> gD :execute "Dsplit " . expand('<cword>')<CR>
 
