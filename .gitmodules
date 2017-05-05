@@ -82,3 +82,6 @@
 [submodule "bundle/vim-sayid"]
 	path = bundle/vim-sayid
 	url = git@github.com:arsenerei/vim-sayid.git
+[submodule "bundle/vim-airline-themes"]
+	path = bundle/vim-airline-themes
+	url = git@github.com:vim-airline/vim-airline-themes.git
