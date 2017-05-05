@@ -16,8 +16,8 @@ autocmd FileType clojure,javascript,html,xml,fish,ruby autocmd BufWritePre <buff
 
 " Highlight comments across files
 colorscheme solarized
-set background=dark
-highlight Comment ctermfg=1* ctermbg=0 cterm=bold
+set background=light
+highlight Comment ctermfg=1* ctermbg=7* cterm=bold
 
 " Extra file types
 au BufNewFile,BufRead *.cljx setlocal ft=clojure
@@ -38,11 +38,12 @@ let g:slime_default_config = {"socket_name": "default", "target_pane": "1"}
 command JSONFormat :%!python -m json.tool
 
 " airline
-let g:airline_powerline_fonts = 0
+let g:airline_powerline_fonts = 1
+let g:airline_theme = 'solarized'
 
 if (exists('+colorcolumn'))
     set colorcolumn=80
-    highlight ColorColumn ctermbg=0
+    highlight ColorColumn ctermbg=7
 endif
 
 " Grepper
