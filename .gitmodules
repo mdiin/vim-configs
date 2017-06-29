@@ -73,9 +73,6 @@
 [submodule "bundle/vim-json"]
 	path = bundle/vim-json
 	url = git@github.com:elzr/vim-json
-[submodule "bundle/vim-jsx"]
-	path = bundle/vim-jsx
-	url = git@github.com:mxw/vim-jsx
 [submodule "bundle/vim-fish"]
 	path = bundle/vim-fish
 	url = git@github.com:dag/vim-fish.git
@@ -88,3 +85,6 @@
 [submodule "bundle/vim-cursorword"]
 	path = bundle/vim-cursorword
 	url = git@github.com:itchyny/vim-cursorword.git
+[submodule "bundle/vim-jsx-pretty"]
+	path = bundle/vim-jsx-pretty
+	url = git@github.com:MaxMEllon/vim-jsx-pretty.git
