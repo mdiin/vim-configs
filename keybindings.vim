@@ -50,15 +50,15 @@ nnoremap [l :lprev<cr>
 " command-line mode bindings
 " all modes bindings
 
-" Rspec mode
-map <unique> <silent> <Leader>a :RSpecAll<CR>
-map <unique> <silent> <Leader>t :RSpecOne<CR>
-map <unique> <silent> <Leader>T :MDual<CR>
-
 " Unite bindings
-map <unique> <silent> <Leader><space> :Unite -start-insert file_rec/neovim<CR>
+if mapcheck("<Leader><space>", "N") == ""
+  map <unique> <silent> <Leader><space> :Unite -start-insert file_rec/neovim<CR>
+endif
 
 " Clojure (fireplace) bindings
-au BufNewFile,BufRead *.clj map <silent> gd :execute "Djump " . expand('<cword>')<CR>
-au BufNewFile,BufRead *.clj map <silent> gD :execute "Dsplit " . expand('<cword>')<CR>
+augroup keybindings
+  au!
+  au BufNewFile,BufRead *.clj map <silent> gd :execute "Djump " . expand('<cword>')<CR>
+  au BufNewFile,BufRead *.clj map <silent> gD :execute "Dsplit " . expand('<cword>')<CR>
+augroup END
 

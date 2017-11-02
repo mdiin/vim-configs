@@ -1,8 +1,6 @@
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
-set foldcolumn=3
-set foldmethod=syntax
 
 " Watch changes to this file
 augroup myvimrc
@@ -16,15 +14,17 @@ autocmd FileType clojure,javascript,html,xml,fish,ruby autocmd BufWritePre <buff
 
 " Highlight comments across files
 colorscheme solarized
-set background=light
-highlight Comment ctermfg=1* ctermbg=7* cterm=bold
+set background=dark
+highlight Comment ctermfg=1* cterm=bold
 
 " Extra file types
-au BufNewFile,BufRead *.cljx setlocal ft=clojure
-au BufNewFile,BufRead *.cljc setlocal ft=clojure
-au BufNewFile,BufRead *.boot setlocal ft=clojure
-au BufNewFile,BufRead *.md setlocal ft=markdown
-au BufNewFile,BufRead *fish_funced* setlocal ft=fish
+augroup myvimrc_filetypes
+  au BufNewFile,BufRead *.cljx setlocal ft=clojure
+  au BufNewFile,BufRead *.cljc setlocal ft=clojure
+  au BufNewFile,BufRead *.boot setlocal ft=clojure
+  au BufNewFile,BufRead *.md setlocal ft=markdown
+  au BufNewFile,BufRead *fish_funced* setlocal ft=fish
+augroup END
 
 set expandtab
 set tabstop=2
@@ -34,21 +34,18 @@ set shiftwidth=2
 let g:slime_target = "tmux"
 let g:slime_default_config = {"socket_name": "default", "target_pane": "1"}
 
-" Commands
-command JSONFormat :%!python -m json.tool
-
 " airline
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'solarized'
 
 if (exists('+colorcolumn'))
-    set colorcolumn=80
-    highlight ColorColumn ctermbg=7
+  set colorcolumn=80
+  highlight ColorColumn ctermbg=0
 endif
 
 " Grepper
 let g:grepper = {
-  \ 'tools': ['ag', 'git', 'grep'],
+  \ 'tools': ['git', 'ag', 'grep'],
   \ 'open':  1,
   \ 'jump':  0,
   \ }
@@ -61,24 +58,14 @@ try
 catch
 endtry
 
-" Syntastic: General
-" These options are recommended for new users:
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-
-let g:syntastic_shell = "/bin/bash"
-
-" Syntastic: Javascript
-let g:syntastic_javascript_checkers = ["standard"]
-let g:syntastic_javascript_standard_exec = "./node_modules/.bin/standard"
-
 " UltiSnips
 let g:UltiSnipsSnippetDirectories = ['~/.vim/UltiSnips', 'UltiSnips']
 
 " NERDCommenter
 let g:NERDSpaceDelims = 1
+
+" Colorizer
+let g:colorizer_auto_filetype = 'css,html,json,javascript'
 
 " Neovim specific
 if has('nvim')
