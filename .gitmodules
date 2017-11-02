@@ -91,3 +91,12 @@
 [submodule "bundle/ale"]
 	path = bundle/ale
 	url = https://github.com/w0rp/ale.git
+[submodule "bundle/Colorizer"]
+	path = bundle/Colorizer
+	url = git@github.com:chrisbra/Colorizer.git
+[submodule "bundle/FastFold"]
+	path = bundle/FastFold
+	url = git@github.com:Konfekt/FastFold.git
+[submodule "bundle/FoldText"]
+	path = bundle/FoldText
+	url = git@github.com:Konfekt/FoldText.git
