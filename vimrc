@@ -47,6 +47,20 @@ if (exists('+colorcolumn'))
   highlight ColorColumn ctermbg=0
 endif
 
+" vim-gitgutter
+let g:gitgutter_override_sign_column_highlight = 0
+highlight SignColumn ctermbg=8
+" always show sign column, to avoid view jumping
+if exists('&signcolumn')
+  set signcolumn=yes
+else
+  let g:gitgutter_sign_column_always = 1
+endif
+highlight GitGutterAdd ctermfg=2
+highlight GitGutterChange ctermfg=3
+highlight GitGutterDelete ctermfg=1
+highlight GitGutterChangeDelete ctermfg=3
+
 " Grepper
 let g:grepper = {
   \ 'tools': ['git', 'ag', 'grep'],
