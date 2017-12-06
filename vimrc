@@ -38,6 +38,10 @@ let g:slime_default_config = {"socket_name": "default", "target_pane": "1"}
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'solarized'
 
+" Show line numbers
+set number
+
+" Show a column marking the 80th character
 if (exists('+colorcolumn'))
   set colorcolumn=80
   highlight ColorColumn ctermbg=0
