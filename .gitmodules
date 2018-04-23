@@ -46,9 +46,6 @@
 [submodule "bundle/vim-autotag"]
 	path = bundle/vim-autotag
 	url = git@github.com:craigemery/vim-autotag.git
-[submodule "bundle/vim-fireplace"]
-	path = bundle/vim-fireplace
-	url = git://github.com/tpope/vim-fireplace.git
 [submodule "bundle/vim-repeat"]
 	path = bundle/vim-repeat
 	url = git@github.com:tpope/vim-repeat
@@ -103,3 +100,6 @@
 [submodule "bundle/vim-gitgutter"]
 	path = bundle/vim-gitgutter
 	url = git@github.com:airblade/vim-gitgutter.git
+[submodule "bundle/clojure-socketrepl.nvim"]
+	path = bundle/clojure-socketrepl.nvim
+	url = git@github.com:mdiin/clojure-socketrepl.nvim
